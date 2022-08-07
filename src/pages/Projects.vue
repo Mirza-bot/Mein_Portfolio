@@ -1,9 +1,53 @@
 <template>
-  <div class="page__container" id="#projects">
+  <w-flex wrap class="page__container" id="#projects">
     <div class="page__header">
       <h2 class="animate_color_gradient">{{ $t("projects.headline") }}</h2>
     </div>
-    <div class="bd3 bdrs1">
+    <div class="project_highlight xs12">
+      <div>
+        <img class="bdrs3" src="../images/JobApplicationManager.gif" />
+        <h3 class="my6">Job Application Manager</h3>
+        <p>
+          {{ $t("projects.projectHightlight.description1") }}
+          <a target="_blank" href="https://tauri.app/about/intro">Tauri</a>
+          {{ $t("projects.projectHightlight.description2") }}
+          <br />
+          <br />
+          {{ $t("projects.projectHightlight.description3") }}
+          <br />
+          <br />
+          {{ $t("projects.projectHightlight.description4") }}
+          <br />
+          <br />
+          {{ $t("projects.projectHightlight.description5") }}
+        </p>
+        <br />
+        <br />
+        <span class="title2">
+          {{ $t("projects.projectHightlight.description6") }}
+        </span>
+        <br />
+        <br />
+        <span>
+          <a
+            href="https://github.com/Mirza-bot/Job-Application-Manager/tree/master/job_application_manager"
+            target="_blank"
+          >
+            <w-button class="mr8" bg-color="white" color="black">
+              <w-icon class="mr1" color="black">mdi mdi-code-braces</w-icon>
+              Code
+            </w-button>
+          </a>
+          <a href="../../src/downloadable/Job_Application_Manager.zip" download>
+            <w-button bg-color="white" color="black">
+              <w-icon class="mr1" color="black">mdi mdi-download</w-icon>
+              Download
+            </w-button>
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="minor_projects xs12">
       <w-button
         class="project__button"
         bg-color="black"
@@ -54,32 +98,7 @@
           <PortfolioP></PortfolioP>
         </div>
       </w-overlay>
-      <w-button
-        class="project__button"
-        bg-color="black"
-        dark
-        @click="showOverlay3 = true"
-      >
-        <img id="salarycalc_img" src="../images/lohnrechner.webp" alt="" />
 
-        {{ $t("projects.project3.title") }}
-      </w-button>
-
-      <w-overlay v-model="showOverlay3" bg-color="rgba(0, 0, 0, 0.9)">
-        <div class="overlay__container">
-          <w-button
-            class="close__overlay"
-            bg-color="white"
-            color="black"
-            lg
-            dark
-            @click="showOverlay3 = false"
-          >
-            <w-icon>wi-cross</w-icon>
-          </w-button>
-          <LohnrechnerP></LohnrechnerP>
-        </div>
-      </w-overlay>
       <w-button
         class="project__button"
         bg-color="black"
@@ -131,7 +150,7 @@
         </div>
       </w-overlay>
     </div>
-  </div>
+  </w-flex>
 </template>
 
 <script>
@@ -175,6 +194,37 @@ div.page__container {
     }
     .w-divider {
       margin: 0;
+    }
+  }
+}
+
+.minor_projects {
+  margin-top: calc(800px - 15vw);
+  @media only screen and (min-width: 1800px) {
+    margin-top: 40vw;
+  }
+}
+
+.project_highlight {
+  display: inline-block;
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 90vw;
+      min-width: 40vw;
+    }
+    button {
+      transform: scale(1.5);
+      margin: 0 60px;
+      @media only screen and (max-width: 800px) {
+        margin: 0 30px;
+      }
     }
   }
 }

@@ -19,8 +19,21 @@ const i18n = createI18n({
       },
       projects: {
         headline: "Projekte",
-        latest: "Neueste",
+        latest: "Neuestes",
         description: "Beschreibung:",
+        projectHightlight: {
+          description1: "Diese Applikation ist mit",
+          description2:
+            "gemacht worden, ein Toolkit zur Entwicklung nativer Desktop-Anwendungen mit JavaScript-Frontend-Frameworks. Es erstellt eine Webview-Anwendung, die sich wie ein Browser verhält, uns jedoch die Verwendung nativer Funktionen wie den Zugriff auf das Dateisystem ermöglicht. Es ist ein direkter Konkurrent von Electron, hat aber den Vorteil, dass es nicht auf chromium/node.js angewiesen ist. Rust wird stattdessen als leichtgewichtiges Backend und Tao/Wry als Frontend verwendet. Dadurch können wir leistungsstarke, kleine Apps erstellen.",
+          description3:
+            "Ich habe eine App erstellt, um meine Bewerbungen zu verwalten. Es hilft mir dabei einen Überblick zu behalten, bei welchen Unternehmen und Stellen ich mich beworben habe und wie viel Zeit seitdem vergangen ist.",
+          description4:
+            "Diesmal war React mein gewähltes Frontend-Framework. Nicht aus einem bestimmten Grund, nur aus Neugier wegen seiner Popularität. Kombiniert mit den CSS-Bibliotheken Tailwind CSS und DaisyUI für gute/s UI/UX.",
+          description5:
+            "Mit der Dokumentation von Tauri habe ich mir etwas schwer getan, da sie nicht so detailliert ist wie ich es von z.B. Vue.js oder React.js gewohnt bin. Die Verwaltung von Tauris-API-Abhängigkeiten und die Festlegung des Zugriffsrechts/Berechtigungen für das Dateisystemmodul war eine kleine Hürde. Aber alles andere war ziemlich intuitiv und es machte Spaß damit zu arbeiten. Ich freue mich darauf wieder mit Tauri zu arbeiten, ich denke es ist ein erstaunliches Stück Software.",
+          description6:
+            "Die App ist derzeit nur für Apple Silicon Macs verfügbar. Plattformübergreifende Unterstützung folgt in Kürze.",
+        },
         project1: {
           descriptionContent:
             'Eine Web-App welche mittels JavaScript, Vue3, Vue-Router und VueX erstellt wurde. Als Backend wird Firebase mit ihrer Realtime-Database genutzt, dies ermöglicht Authentifizierungsfunktionen und das Speichern der eigenen "Task-Karten", für jeden Nutzer der sich registriert. Mittels der "Drag & Drop"-API können die Karten zwischen den einzelnen Kategorien verschoben werden. Das Löschen und Editieren der Karten ist ebenfalls möglich.',
@@ -100,6 +113,19 @@ const i18n = createI18n({
         headline: "Projects",
         latest: "Latest",
         description: "Description:",
+        projectHightlight: {
+          description1: "This application is made with",
+          description2:
+            "a toolkit for developing native desktop applications with JavaScript frontend frameworks. It makes a webview application which behaves like a browser but enables us to use native functionalities, like accessing the file system. It's a direct competitor to Electron but has the  advantage that it doesn't rely on chromium/node.js. Rust is used as a  lightweight backend and Tao/Wry as frontend instead. That allows us to make performant, small sized apps.",
+          description3:
+            "I've made an app to manage my job applications. It helps me to keep an overview of the companies and job positions I've applied to and how much time passed since.",
+          description4:
+            "This time React was my chosen frontend framework. Not for any particular reason, just curiosity because of its popularity. Combined with the CSS libraries Tailwind CSS and DaisyUI for a good UI/UX.",
+          description5:
+            "I struggled a bit with the documentation of Tauri, because it isn't as detailed as I'm used to from for exapmle Vue.js or React.js. To manage Tauris API dependencies and set the scope/allowances for the filesystem module was a little hurdle. But everything else was pretty intuitive and fun to work with. I'm looking forward to work again with Tauri, I think it is an amazing piece of software.",
+          description6:
+            "The App is currently only available for Apple Silicon Macs. Cross platform support coming soon.",
+        },
         project1: {
           descriptionContent:
             'A web-app that was created using JavaScript ,Vue3, Vue-Router and VueX. Firebase with its real-time database is used as the backend, this enables authentification functions and the saving of individual "task-cards", for each user who registers. The cards can be moved between the individual categories using the "Drag & Drop"-API. It is also possible to delete and edit the cards.',

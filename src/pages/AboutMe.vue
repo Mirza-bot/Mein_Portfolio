@@ -63,6 +63,9 @@ import SEOImg from "../images/SEO.jpg";
 import GitImg from "../images/Git-Icon.png";
 import RespImg from "../images/Responsive.png";
 import Resume from "../assets/documents/Mirza's public Resume.pdf";
+import TailwindLogo from "../images/Tailwind_CSS_Logo.svg.png";
+import ReactLogo from "../images/React-icon.svg.png";
+import TauriIcon from "../images/tauri-1.svg";
 export default {
   setup() {
     const badges = [
@@ -70,10 +73,10 @@ export default {
       { name: "Vue.js", img: VueImg },
       { name: "Sass", img: SassImg },
       { name: "Bootstrap", img: BootstrapImg },
-      { name: "WaveUI (Vue.js)", img: WaveImg },
-      { name: "Onpage SEO", img: SEOImg },
+      { name: "Tailwind CSS", img: TailwindLogo },
+      { name: "React", img: ReactLogo },
       { name: "Git", img: GitImg },
-      { name: "Responsive Designs", img: RespImg },
+      { name: "Tauri", img: TauriIcon },
     ];
 
     return {
